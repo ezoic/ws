@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
 var bg = context.Background()

@@ -15,7 +15,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gobwas/httphead"
+	"github.com/ezoic/httphead"
 )
 
 func TestDialerRequest(t *testing.T) {
@@ -541,7 +541,7 @@ func TestDialerHandshake(t *testing.T) {
 				}
 			}
 
-			_, br, _, err := test.dialer.Dial(context.Background(), "ws://gobwas.com")
+			_, br, _, err := test.dialer.Dial(context.Background(), "ws://ezoic.com")
 			if test.err != err {
 				t.Fatalf("unexpected error: %v;\n\twant %v", err, test.err)
 			}
@@ -682,7 +682,7 @@ func TestDialerCancelation(t *testing.T) {
 				time.AfterFunc(t, cancel)
 			}
 
-			_, _, _, err := test.dialer.Dial(ctx, "ws://gobwas.com")
+			_, _, _, err := test.dialer.Dial(ctx, "ws://ezoic.com")
 			if err != test.err {
 				t.Fatalf("unexpected error: %q; want %q", err, test.err)
 			}

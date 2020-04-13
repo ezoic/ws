@@ -304,7 +304,7 @@ func MaskFrame(f Frame) Frame {
 // Note that it copies f payload to prevent collisions.
 // For less allocations you could use MaskFrameInPlaceWith or construct frame manually.
 func MaskFrameWith(f Frame, mask [4]byte) Frame {
-	// TODO(gobwas): check CopyCipher ws copy() Cipher().
+	// TODO(ezoic): check CopyCipher ws copy() Cipher().
 	p := make([]byte, len(f.Payload))
 	copy(p, f.Payload)
 	f.Payload = p

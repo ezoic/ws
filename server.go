@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gobwas/httphead"
-	"github.com/gobwas/pool/pbufio"
+	"github.com/ezoic/httphead"
+	"github.com/ezoic/pool/pbufio"
 )
 
 // Constants used by ConnUpgrader.
@@ -384,7 +384,7 @@ func (u Upgrader) Upgrade(conn io.ReadWriter) (hs Handshake, err error) {
 	)
 
 	// Prepare I/O buffers.
-	// TODO(gobwas): make it configurable.
+	// TODO(ezoic): make it configurable.
 	br := pbufio.GetReader(conn,
 		nonZero(u.ReadBufferSize, DefaultServerReadBufferSize),
 	)

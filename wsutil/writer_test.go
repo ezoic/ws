@@ -9,10 +9,10 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
-// TODO(gobwas): test NewWriterSize on edge cases for offset.
+// TODO(ezoic): test NewWriterSize on edge cases for offset.
 
 const (
 	bitsize = 32 << (^uint(0) >> 63)

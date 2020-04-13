@@ -5,7 +5,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
 // Message represents a message from peer, that could be presented in one or
@@ -23,7 +23,7 @@ type Message struct {
 // want to send some control frame between fragments. Then returned slice will
 // contain those control frames at first, and then result of gluing fragments.
 //
-// TODO(gobwas): add DefaultReader with buffer size options.
+// TODO(ezoic): add DefaultReader with buffer size options.
 func ReadMessage(r io.Reader, s ws.State, m []Message) ([]Message, error) {
 	rd := Reader{
 		Source:    r,

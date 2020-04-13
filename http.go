@@ -9,7 +9,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/gobwas/httphead"
+	"github.com/ezoic/httphead"
 )
 
 const (
@@ -161,7 +161,7 @@ func httpParseHeaderLine(line []byte) (k, v []byte, ok bool) {
 	}
 
 	k = btrim(line[:colon])
-	// TODO(gobwas): maybe use just lower here?
+	// TODO(ezoic): maybe use just lower here?
 	canonicalizeHeaderKey(k)
 
 	v = btrim(line[colon+1:])

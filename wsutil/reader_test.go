@@ -7,10 +7,10 @@ import (
 	"testing"
 	"unicode/utf8"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
-// TODO(gobwas): test continuation discard.
+// TODO(ezoic): test continuation discard.
 //				 test discard when NextFrame().
 
 var eofReader = bytes.NewReader(nil)

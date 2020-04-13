@@ -17,8 +17,8 @@ go:
   - 1.x
 
 install:
-  - go get github.com/gobwas/pool
-  - go get github.com/gobwas/httphead
+  - go get github.com/ezoic/pool
+  - go get github.com/ezoic/httphead
 
 script:
   - if [ "$TRAVIS_OS_NAME" = "windows" ]; then go test ./...; fi

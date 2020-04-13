@@ -5,7 +5,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
 func TestControlHandler(t *testing.T) {

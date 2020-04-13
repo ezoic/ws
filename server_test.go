@@ -19,10 +19,10 @@ import (
 	"testing"
 	_ "unsafe" // for go:linkname
 
-	"github.com/gobwas/httphead"
+	"github.com/ezoic/httphead"
 )
 
-// TODO(gobwas): upgradeGenericCase with methods like configureUpgrader,
+// TODO(ezoic): upgradeGenericCase with methods like configureUpgrader,
 // configureHTTPUpgrader.
 type upgradeCase struct {
 	label string
@@ -733,7 +733,7 @@ func (r *recorder) Bytes() []byte {
 		return r.ResponseRecorder.Body.Bytes()
 	}
 
-	// TODO(gobwas): remove this when support for go 1.7 will end.
+	// TODO(ezoic): remove this when support for go 1.7 will end.
 	resp := r.Result()
 	cs := strings.TrimSpace(resp.Header.Get("Content-Length"))
 	if n, err := strconv.ParseInt(cs, 10, 64); err == nil {

@@ -5,7 +5,7 @@ import (
 	"io"
 	"io/ioutil"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
 // ErrNoFrameAdvance means that Reader's Read() method was called without
@@ -37,7 +37,7 @@ type Reader struct {
 	// bytes are not valid UTF-8 sequence, ErrInvalidUTF8 returned.
 	CheckUTF8 bool
 
-	// TODO(gobwas): add max frame size limit here.
+	// TODO(ezoic): add max frame size limit here.
 
 	OnContinuation FrameHandlerFunc
 	OnIntermediate FrameHandlerFunc

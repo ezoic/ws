@@ -40,7 +40,7 @@ about 78% coverage.
 # Examples
 
 Example applications using `ws` are developed in separate repository
-[ws-examples](https://github.com/gobwas/ws-examples).
+[ws-examples](https://github.com/ezoic/ws-examples).
 
 # Usage
 
@@ -52,8 +52,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/gobwas/ws"
-	"github.com/gobwas/ws/wsutil"
+	"github.com/ezoic/ws"
+	"github.com/ezoic/ws/wsutil"
 )
 
 func main() {
@@ -88,8 +88,8 @@ import (
 	"net/http"
 	"io"
 
-	"github.com/gobwas/ws"
-	"github.com/gobwas/ws/wsutil"
+	"github.com/ezoic/ws"
+	"github.com/ezoic/ws/wsutil"
 )
 
 func main() {
@@ -169,7 +169,7 @@ import (
 	"net"
 	"io"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
 func main() {
@@ -243,7 +243,7 @@ import (
 	"net"
 	"log"
 
-	"github.com/gobwas/ws"
+	"github.com/ezoic/ws"
 )
 
 func main() {
@@ -290,8 +290,8 @@ import (
 	"net/http"
 	"runtime"
 
-	"github.com/gobwas/httphead"
-	"github.com/gobwas/ws"
+	"github.com/ezoic/httphead"
+	"github.com/ezoic/ws"
 )
 
 func main() {
@@ -354,7 +354,7 @@ func main() {
 
 
 [rfc-url]: https://tools.ietf.org/html/rfc6455
-[godoc-image]: https://godoc.org/github.com/gobwas/ws?status.svg
-[godoc-url]: https://godoc.org/github.com/gobwas/ws
-[travis-image]: https://travis-ci.org/gobwas/ws.svg?branch=master
-[travis-url]: https://travis-ci.org/gobwas/ws
+[godoc-image]: https://godoc.org/github.com/ezoic/ws?status.svg
+[godoc-url]: https://godoc.org/github.com/ezoic/ws
+[travis-image]: https://travis-ci.org/ezoic/ws.svg?branch=master
+[travis-url]: https://travis-ci.org/ezoic/ws

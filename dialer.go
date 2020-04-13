@@ -13,8 +13,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gobwas/httphead"
-	"github.com/gobwas/pool/pbufio"
+	"github.com/ezoic/httphead"
+	"github.com/ezoic/pool/pbufio"
 )
 
 // Constants used by Dialer.
